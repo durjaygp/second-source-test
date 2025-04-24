@@ -101,7 +101,11 @@ composer run dev
 
 ## 🧪 Testing API (Optional)
 
-Use [Postman](https://www.postman.com/) or `curl` to test the endpoints.
+Use [Postman](https://www.postman.com/)
+```bash
+You can check Postman Export file:  Code Test.postman_collection.json file in root directory
+```
+or `curl` to test the endpoints.
 
 Example:
 

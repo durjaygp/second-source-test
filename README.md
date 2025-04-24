@@ -22,8 +22,8 @@ This repository contains a Laravel application implementing:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/durjaygp/second-source-test.git
+cd second-source-test
 ```
 
 ### 2. Install dependencies
@@ -66,7 +66,7 @@ php artisan migrate --seed
 ### 7. Start the development server
 
 ```bash
-php artisan serve
+composer run dev
 ```
 
 ---
@@ -76,8 +76,8 @@ php artisan serve
 ### Blog Post API
 
 - `GET /api/posts` — List all posts
-- `POST /api/posts` — Create a new post (title, content)
-- `GET /api/posts/{id}` — View a single post
+- `POST /api/post/create` — Create a new post (title, content)
+- `GET /api/post/{id}` — View a single post
 
 ### User Registration API
 
@@ -94,8 +94,8 @@ php artisan serve
 ### Task Management API
 
 - `POST /api/tasks` — Add new task (title)
-- `PATCH /api/tasks/{id}` — Mark task as completed
-- `GET /api/tasks/pending` — Get all pending tasks
+- `PATCH /api/task/{id}` — Mark task as completed
+- `GET /api/task/pending` — Get all pending tasks
 
 ---
 
@@ -106,7 +106,7 @@ Use [Postman](https://www.postman.com/) or `curl` to test the endpoints.
 Example:
 
 ```bash
-curl -X POST http://localhost:8000/api/register -H "Content-Type: application/json" -d '{"name":"Test User", "email":"test@example.com", "password":"password123"}'
+curl -X POST http://127.0.0.1:8000/api/register -H "Content-Type: application/json" -d '{"name":"Test User", "email":"test@example.com", "password":"password123"}'
 ```
 
 ---
